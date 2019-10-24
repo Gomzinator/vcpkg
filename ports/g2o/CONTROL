@@ -1,5 +1,10 @@
 Source: g2o
-Version: 20170730_git-5
+Version: 2019-08-01
 Build-Depends: suitesparse, eigen3, clapack (!osx), ceres
 Description: g2o: A General Framework for Graph Optimization
 Homepage: https://openslam.org/g2o.html
+Default-Features:
+
+Feature: cholmod_solver
+Build-Depends: suitesparse
+Description: build with cholmod_solver in g2o (requiering suiteparse for cholmod)
